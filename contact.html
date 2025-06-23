@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCI - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="rcilogo.jpg" type="image/jpg">
+    <link rel="shortcut icon" href="rcilogo.jpg" type="image/jpg">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "QX8jqvD3ek6dfvhvh",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                  to_email: "touficzalakl@gmail.com", // <-- Hardcode here
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('service_n8gzxsm', 'template_p6il5rg', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+</head>
+    
+<body>
+
+     <nav class="mobile-menu" aria-label="Mobile Menu">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="index.html">About</a></li>
+            <li class="nav-item"><a href="mission.html">Mission</a></li>
+            <li class="nav-item"><a href="services.html">Services</a></li>
+            <li class="nav-item"><a href="vision.html">Vision</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- === NAVIGATION BAR === -->
+   <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <img src="rcitransparent.png" alt="RCI Logo">
+            </div>
+            <!-- Desktop Nav Links -->
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">About</a></li>
+                <li class="nav-item"><a href="mission.html">Mission</a></li>
+                <li class="nav-item"><a href="services.html">Services</a></li>
+                <li class="nav-item"><a href="vision.html">Vision</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Hamburger Button -->
+            <button class="hamburger" aria-label="Toggle Menu">☰</button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Your IT Partner is One Call Away</h1>
+        </div>
+    </section>
+
+
+
+    <section id="section-wrapper">
+        <div class="box-wrapper">
+            <div class="info-wrap">
+                <h2 class="info-title">Contact Information</h2>
+                <h3 class="info-sub-title">Fill up the form and our team will get back to you!</h3>
+                <ul class="info-details">
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <span><strong>Phone: </strong></span><a href="tel:+9614928661"> +961 4 928 661</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-paper-plane"></i>
+                        <span><strong>Email: </strong><a href="mailto:info@example.com">admin@rci-lb.com</a>
+                    </li>
+                     <li>
+                        <i class="fa fa-globe" aria-hidden="true"></i>
+                        <span><strong>Address: </strong><a> Galleria Center, 4th Floor, Elyssar El Matn - Lebanon</a>
+                    </li>
+                </ul>
+            </div>
+                <div class="form-wrap">
+                    <form id="contact-form">
+                        <!-- Static time value -->
+                        <input type="hidden" name="time" value="Mar 10 2025 08:46">
+
+                        <h2 class="form-title">Send us a message</h2>
+
+                        <label>Name</label>
+                        <input type="text" name="name" required>
+
+                        <label>Email</label>
+                        <input type="email" name="email" required>
+
+                        <label>Company Name</label>
+                        <input type="text" name="Company Name" required>
+
+                        <label>Message</label>
+                        <textarea name="message" required></textarea>
+
+                        <input type="submit" value="Send" class="submit-button">
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="rcitransparent.png" alt="RCI Logo">
+        </div>
+        <div class="footer-links">
+            <p>Copyright © 2025 RCI - Relational Computer International. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+ <script>
+      // Hamburger toggle script
+      document.querySelector('.hamburger').addEventListener('click', function() {
+        document.querySelector('.mobile-menu').classList.toggle('open');
+      });
+    </script>
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function () {
+        emailjs.init({
+            publicKey: "QX8jqvD3ek6dfvhvh", // Your public key
+        });
+    })();
+
+    window.onload = function () {
+        document.getElementById('contact-form').addEventListener('submit', function (event) {
+               to_email: "touficzalakl@gmail.com", // <-- Hardcode here
+            event.preventDefault();
+            emailjs.sendForm('service_n8gzxsm', 'template_p6il5rg', this)
+                .then(() => {
+                    alert('Message sent successfully!');
+                }, (error) => {
+                    alert('Failed to send message: ' + JSON.stringify(error));
+                });
+        });
+    };
+</script>
+</body>
+</html>
+
+
+
+

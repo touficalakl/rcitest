@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RCI - About</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="rcilogo.jpg" type="image/jpg">
+    <link rel="shortcut icon" href="rcilogo.jpg" type="image/jpg">
+</head>
+<body>
+
+    <!-- Mobile Slide-Out Menu -->
+    <nav class="mobile-menu" aria-label="Mobile Menu">
+        <ul class="nav-list">
+            <li class="nav-item"><a href="index.html">About</a></li>
+            <li class="nav-item"><a href="mission.html">Mission</a></li>
+            <li class="nav-item"><a href="services.html">Services</a></li>
+            <li class="nav-item"><a href="vision.html">Vision</a></li>
+            <li class="nav-item"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- === NAVIGATION BAR === -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="logo">
+                <img src="rcitransparent.png" alt="RCI Logo">
+            </div>
+            <!-- Desktop Nav Links -->
+            <ul class="nav-list">
+                <li class="nav-item"><a href="index.html">About</a></li>
+                <li class="nav-item"><a href="mission.html">Mission</a></li>
+                <li class="nav-item"><a href="services.html">Services</a></li>
+                <li class="nav-item"><a href="vision.html">Vision</a></li>
+                <li class="nav-item"><a href="contact.html">Contact</a></li>
+            </ul>
+            <!-- Hamburger Button -->
+            <button class="hamburger" aria-label="Toggle Menu">☰</button>
+        </div>
+    </nav>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Leading IT Solutions for Your Business</h1>
+        </div>
+    </section>
+
+    <!-- === ABOUT SECTION === -->
+    <section class="about-section">
+        <div class="about-container">
+           
+            <div class="about-text">
+                <h2>Overview and History</h2>
+                <div class="mission">
+                    <p>Relational Computer International (RCI) was established in 1993 and has consistently been active in the IT sector.
+                         Since its foundation, RCI has partnered with Sage and INGRES as solution providers, and with CA since 1996. In 2006, the 
+                         company shifted its strategic focus, transitioning into a comprehensive solutions provider working with a diverse range 
+                         of vendors to meet market demands, adding both hardware and software solutions to its portfolio.</p>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="photo2.jpg" alt="Hardware">
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="about-container">
+               <div class="about-image">
+                <img src="photo3.jpg" alt="Hardware">
+            </div>
+            <div class="about-text">
+                <h2>Leadership and Expertise</h2>
+                <div class="mission">
+                    <p>Led by seasoned professionals with over 30 years of experience in the IT industry, RCI aims to be one of the top IT solution 
+                        provider in Lebanon and the Levant. The company is committed to offering cutting-edge enterprise solutions, backed by 
+                        expert services, to help clients optimize their operations.</p>
+                </div>
+            </div>
+         
+        </div>
+    </section>
+
+    <section class="about-section">
+        <div class="about-container">
+            
+            <div class="about-text">
+                <h2>IT Evolution</h2>
+                <div class="mission">
+                    <p>The rapid growth of the internet and online business, along with traditional business needs, has 
+                        sped up the development of enterprise technology. RCI uses its experience to help with this change, providing smart
+                        solutions that help businesses improve their operations and serve their customers better.
+                    </p>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="about-photo3.jpg" alt="Hardware">
+            </div>
+        </div>
+    </section>
+
+
+   <section class="insights-section">
+    <h2>Our Latest Distributors</h2>
+    <div class="insights-container">
+
+      <!-- Card 1 -->
+        <div class="insight-card">
+        <img src="microsoft-logo.jpg" alt="Microsoft">
+        <div class="insight-content">
+        <h3>Microsoft is a global technology provider offering software, hardware, and cloud solutions across productivity, AI, and enterprise services.</h3>        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="insight-card">
+        <img src="scopelogo.jpeg" alt="Scope ">
+        <div class="insight-content">
+          <h3>Scope is a regional IT distributor and solutions provider, offering enterprise technologies and support across networking, security, and cloud services.</h3>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="insight-card">
+        <img src="logicom.jpeg" alt="Logicom">
+        <div class="insight-content">
+          <h3>Logicom is a leading regional distributor of technology solutions and services, partnering with major global IT vendors to serve Europe, the Middle East, and Africa.</h3>
+        </div>
+      </div>
+
+      <div class="insight-card">
+        <img src="ingramlogo.png" alt="Ingram">
+        <div class="insight-content">
+          <h3>Ingram Micro is one of the world’s largest distributors of IT products and services, enabling business partners to operate efficiently and scale globally.</h3>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+    <section class="partners-showcase">
+        <div class="partners-header">
+            <h2>Our Partners</h2>
+        </div>
+<div class="carousel-container">
+    <button class="carousel-btn left" onclick="slideLeft()">&#9664;</button>
+
+    <div class="carousel-wrapper">
+        <div class="partners-grid">
+            <div class="partners-card" onclick="showDescription(this)" data-description="Microsoft is one of the world’s largest technology companies, offering a wide range of software, hardware, and cloud-based services. Known for its Windows operating system, Microsoft 365 productivity suite, and Azure cloud platform, the company serves both consumers and enterprises globally. Its innovations in AI, cloud computing, developer tools, and business applications make it a dominant force across multiple sectors of the tech industry.">
+                <img src="microsoft-logo.jpg" alt="Microsoft">
+            </div>
+            <div class="partners-card" onclick="showDescription(this)" data-description="Dell Technologies is a global IT solutions provider that designs, develops, and supports a comprehensive range of products including laptops, servers, storage systems, and enterprise software. Through brands like Dell, Dell EMC, and Alienware, it serves both consumers and large organizations. Dell is known for its focus on scalable infrastructure, data center modernization, and edge computing, helping customers transform their digital environments.">
+                <img src="dell-logo.png" alt="Dell">
+            </div>
+           <div class="partners-card" onclick="showDescription(this)" data-description="VMware is a global leader in cloud infrastructure and digital workspace technology, best known for pioneering virtualization software. Its solutions enable businesses to efficiently manage workloads across private, public, and hybrid cloud environments. VMware plays a key role in modern IT infrastructure with products that span compute, storage, networking, and security — helping organizations accelerate innovation while maintaining control and flexibility.">
+                <img src="vmware-logo.png" alt="VMware">
+            </div>
+            <div class="partners-card" onclick="showDescription(this)" data-description="Broadcom Inc. is a global leader in technology, specializing in semiconductor, enterprise software, and security solutions. Its product portfolio supports critical markets like cloud, data center, networking, broadband, wireless, storage, and industrial applications. Headquartered in Palo Alto, CA, Broadcom delivers solutions in networking, storage, mobile connectivity, cybersecurity, and cloud infrastructure.">
+                <img src="broadcomlogo.jpeg" alt="Broadcom">
+            </div>
+             <div class="partners-card" onclick="showDescription(this)" data-description="Veeam specializes in backup, recovery, and data management solutions for virtual, cloud-native, SaaS, and physical workloads. With over 550,000 customers worldwide, Veeam focuses on ensuring data resilience and availability across various IT environments.">
+                <img src="veeamlogo.jpg" alt="Veeam">
+            </div>
+            <div class="partners-card" onclick="showDescription(this)" data-description="Acronis is a global cyber protection company offering integrated solutions that combine cybersecurity, data protection, and endpoint management. Headquartered in Switzerland with global operations, Acronis serves businesses of all sizes, ensuring data integrity and business continuity. Acronis is a global cyber protection company offering integrated solutions that combine cybersecurity, data protection, and endpoint management. Headquartered in Switzerland with global operations, Acronis serves businesses of all sizes, ensuring data integrity and business continuity.">
+                <img src="acronislogo.png" alt="Acronis">
+            </div>
+            <div class="partners-card" onclick="showDescription(this)" data-description="ManageEngine, the IT management division of Zoho Corporation, offers a comprehensive suite of over 60 enterprise-grade tools covering network, server, application, and endpoint management. Trusted by over 280,000 organizations globally, its solutions emphasize affordability and ease of use for businesses of all sizes.">
+                <img src="manageenginelogo.jpg" alt="ManageEngine">
+            </div>
+            <div class="partners-card" onclick="showDescription(this)" data-description="Kaspersky is a global cybersecurity company that provides advanced security solutions and services to protect businesses, critical infrastructure, governments, and consumers worldwide. Its portfolio includes antivirus software, endpoint protection, threat intelligence, and cybersecurity services. Headquartered in Moscow, Kaspersky is known for its cutting-edge technologies in threat detection and cyber defense.">
+                <img src="kasperskylogo.jpg" alt="Kaspersky">
+            </div>
+            <div class="partners-card" onclick="showDescription(this)" data-description="SolarWinds is a provider of IT infrastructure management software, offering solutions for network performance, system management, and observability. Founded in 1999 and headquartered in Austin, Texas, SolarWinds serves a diverse global customer base, including many Fortune 500 companies.">
+                <img src="solarwindslogo.jpeg" alt="Solarwinds">
+            </div>
+            <div class="partners-card" onclick="showDescription(this)" data-description="VMware Carbon Black is a cybersecurity company specializing in cloud-native endpoint protection solutions designed to detect and prevent advanced cyber threats. Founded in 2002 as Bit9 and rebranded after merging with Carbon Black in 2014, the company offers a suite of products that provide continuous visibility, threat detection, and incident response capabilities across various endpoints.">
+                <img src="carbonblacklogo.jpg" alt="CarbonBlack">
+            </div>
+            <div class="partners-card" onclick="showDescription(this)" data-description="Arcserve provides comprehensive data protection, backup, disaster recovery, and business continuity solutions for mid-market and enterprise organizations. Founded in 1983, the company offers scalable solutions to safeguard critical data across diverse IT environments.">
+                <img src="arcservelogo.png" alt="Arserve Logo">
+            </div>
+            <div class="partners-card" onclick="showDescription(this)" data-description="GFI Software develops essential IT solutions tailored for small and medium-sized businesses, focusing on network management, security, and compliance. Serving over 80,000 customers worldwide, GFI delivers its products through a robust global partner network.">
+                <img src="GFIlogo.png" alt="GFI">
+            </div>
+            <div class="partners-card" onclick="showDescription(this)" data-description="Formerly known as ACCPAC, Sage 300 is a mid-market enterprise resource planning (ERP) solution designed to streamline operations from financial management to inventory control. It offers flexibility and scalability to meet the diverse needs of growing businesses.">
+                <img src="accpaclogo.png" alt="ACCPAC">
+            </div>
+             <div class="partners-card" onclick="showDescription(this)" data-description="The Semantic Web is an extension of the current web, proposed by Tim Berners-Lee, aimed at enabling machines to understand and interpret data more intelligently. It leverages technologies like RDF (Resource Description Framework), OWL (Web Ontology Language), and SPARQL to structure and link data across different systems. By making web content machine-readable, the Semantic Web enhances data interoperability, knowledge discovery, and automation — particularly in fields like AI, data integration, and the Internet of Things (IoT).">
+                <img src="semantic-logo.jpeg" alt="Semantic Web">
+            </div>
+            <div class="partners-card" onclick="showDescription(this)" data-description="Microsoft is one of the world’s largest technology companies, offering a wide range of software, hardware, and cloud-based services. Known for its Windows operating system, Microsoft 365 productivity suite, and Azure cloud platform, the company serves both consumers and enterprises globally. Its innovations in AI, cloud computing, developer tools, and business applications make it a dominant force across multiple sectors of the tech industry.">
+                <img src="microsoft-logo.jpg" alt="Microsoft">
+            </div>
+            <div class="partners-card" onclick="showDescription(this)" data-description="Dell Technologies is a global IT solutions provider that designs, develops, and supports a comprehensive range of products including laptops, servers, storage systems, and enterprise software. Through brands like Dell, Dell EMC, and Alienware, it serves both consumers and large organizations. Dell is known for its focus on scalable infrastructure, data center modernization, and edge computing, helping customers transform their digital environments.">
+                <img src="dell-logo.png" alt="Dell">
+            </div>
+        </div>
+    </div>
+      <button class="carousel-btn right" onclick="slideRight()">&#9654;</button>
+    </div>
+          
+         <div id="description-box" class="description-box">Click on any partner to know more about them...</div>        
+    </section>
+ <!-- Footer-->
+    <footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="rcitransparent.png" alt="RCI Logo">
+        </div>
+        <div class="footer-links">
+            <p>Copyright © 2025 RCI - Relational Computer International. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+    <script>
+      // Hamburger toggle script
+      document.querySelector('.hamburger').addEventListener('click', function() {
+        document.querySelector('.mobile-menu').classList.toggle('open');
+      });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
